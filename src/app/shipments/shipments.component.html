@@ -6,8 +6,11 @@
     <div class="main-table">
         <div *ngFor="let item of lineX.orders">
             <div class="glass">
+                <span class="order">Order Number: {{ item.orderNumber }}</span>
+                <hr />
                 <span>{{ item.billTo.company }}</span>
-                <span>Order Number: {{ item.orderNumber }}</span>
+                <span>{{ item.items[0].name }}</span>
+                <span>Order Date: {{ item.orderDate | date:'MM-dd-yy' }}</span>
             </div>
         </div>
     </div>
