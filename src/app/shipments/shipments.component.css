@@ -1,0 +1,47 @@
+.main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    align-items: center;
+    margin: 0;
+}
+  .glass {
+    background: white;
+    min-height: 20vh;
+    width: 60%;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 1rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 20px;
+  }
+  .glassbanner {
+    background: white;
+    min-height: 5vh;
+    width: 60%;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .main-table {
+      margin: 20px auto;
+    max-height:42vh;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
