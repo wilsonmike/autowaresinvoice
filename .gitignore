@@ -48,3 +48,6 @@ Thumbs.db
 #backend
 .env
 node_modules
+.keys
+keys
+keys.ts

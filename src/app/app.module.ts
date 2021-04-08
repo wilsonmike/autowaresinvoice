@@ -7,6 +7,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { MarchComponent } from './march/march.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ShipmentsComponent } from './shipments/shipments.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { MarchComponent } from './march/march.component';
     HomepageComponent,
     NavigationComponent,
     PagenotfoundComponent,
-    MarchComponent
+    MarchComponent,
+    ShipmentsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
