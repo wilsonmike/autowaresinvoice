@@ -9,6 +9,8 @@ import { ShipstationService } from '../shipstation.service';
 })
 export class ShipmentsComponent implements OnInit {
   lineX: any = [];
+  term = '';
+  searchline = '';
 
   constructor(private service: ShipstationService, private route: ActivatedRoute) { }
 

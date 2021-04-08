@@ -16,6 +16,7 @@
     backdrop-filter: blur(2rem);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 10px auto;
     padding: 20px;
   }
@@ -32,13 +33,13 @@
   }
   .main-table {
     margin: 20px auto;
-    max-height:42vh;
+    max-height:50vh;
     overflow-y:scroll;
     overflow-x:hidden;
 }
 hr {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
     border: 0;
     border-top: 1px solid white;
   }
@@ -46,3 +47,19 @@ hr {
   .order {
       font-size: 1.2rem;
   }
+
+  .input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    width: 30%;
+    color: white;
+    font-size: 18px;
+}
+.searchy {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+}
