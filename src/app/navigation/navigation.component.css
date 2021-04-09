@@ -1,6 +1,7 @@
 .navbar-brand {
     font-size: 1rem;
     color: white;
+    margin-left: 20%;
 }
 .nav-link {
     color: white;
@@ -9,5 +10,17 @@
     background: #373740;
 }
 .navbar-nav {
-    margin-left: auto;
+    margin-left: 60%;
 }
+
+@media screen and (max-width: 690px) {
+    .navbar-nav {
+        margin-left: 10%;
+    }
+    .navbar-brand {
+        font-size: 1rem;
+        color: white;
+        margin-left: 10%;
+    }
+  }
+  

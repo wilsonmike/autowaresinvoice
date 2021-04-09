@@ -1,0 +1,65 @@
+.main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: #33333D;  /* fallback for old browsers */
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    align-items: center;
+    margin: 0;
+}
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.card-margin {
+    margin: 0 10px;
+}
+.red {
+    background-color: #EA4335;
+}
+.green {
+    background: #34A853;
+}
+.blue {
+    background: #4285F4;
+}
+.yellow {
+    background: #FBBC05;
+}
+.card-banner {
+    display: flex;
+    margin: 5% auto;
+    width: 48%;
+}
+.button {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.bth {
+    padding: 15px;
+    border-radius: .5rem;
+    color: white;
+    background-color: #33333D;
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 690px) {
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .card-banner {
+        display: flex;
+        margin: 5% auto;
+        width: 60%;
+    }
+  }
+  

@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ShipmentsComponent } from './shipments/shipments.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     NavigationComponent,
     PagenotfoundComponent,
     MarchComponent,
-    ShipmentsComponent
+    ShipmentsComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,

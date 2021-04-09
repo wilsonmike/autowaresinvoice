@@ -15,25 +15,64 @@
     z-index: 2;
     backdrop-filter: blur(2rem);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px auto;
-    padding: 20px;
+    padding: 50px;
   }
-  .glassbanner {
-    /* background: #373740; */
+  .cards {
+      display: flex;
+      margin: 20px auto;
+      justify-content: center;
+  }
+  .glasstotal {
     color: white;
     min-height: 5vh;
-    width: 60%;
+    width: 20%;
+    background: #34A853;
+    border-radius: .5rem;
     z-index: 2;
     backdrop-filter: blur(2rem);
     display: flex;
-    margin: 20px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 20px;
+  }
+  .glasstotalred {
+    color: white;
+    min-height: 5vh;
+    width: 20%;
+    background: #4285F4;
+    border-radius: .5rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 20px;
+  }
+  .glassbanner {
+    color: white;
+    min-height: 5vh;
+    width: 20%;
+    background: #EA4335;
+    border-radius: .5rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
     padding: 20px;
   }
   .main-table {
     margin: 20px auto;
-    max-height:50vh;
+    max-height:60vh;
     overflow-y:scroll;
     overflow-x:hidden;
 }
@@ -53,13 +92,65 @@ hr {
     border: none;
     outline: none;
     border-bottom: 1px solid white;
-    width: 30%;
+    width: 40%;
     color: white;
     font-size: 18px;
 }
 .searchy {
     display: flex;
     align-items: center;
-    margin-left: 10%;
-    margin-top: 5%;
+    margin: 3% 20%;
 }
+.search-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+.navbar-toggler-icon {
+    background-color: white;
+    background: white;
+}
+.ordersimg {
+    display: flex;
+    align-items: center;
+}
+.recieved {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+.marginitems {
+    display: flex;
+    flex-direction: column;
+}
+.greenbox {
+    height: 50px;
+    width: 50px;
+}
+
+@media screen and (max-width: 690px) {
+    .glass {
+        color: white;
+        min-height: 20vh;
+        width: 100%;
+        background: #373740;
+        border-radius: 1rem;
+        z-index: 2;
+        backdrop-filter: blur(2rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px auto;
+        padding: 50px;
+      }
+      .input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid white;
+        width: 60%;
+        color: white;
+        font-size: 18px;
+    }
+  }
+  
