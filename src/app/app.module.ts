@@ -12,6 +12,9 @@ import { ShipmentsComponent } from './shipments/shipments.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 import { InfoComponent } from './info/info.component';
+import { SpreadsheetComponent } from './spreadsheet/spreadsheet.component';
+import { ShippedComponent } from './shipped/shipped.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,14 +24,17 @@ import { InfoComponent } from './info/info.component';
     PagenotfoundComponent,
     MarchComponent,
     ShipmentsComponent,
-    InfoComponent
+    InfoComponent,
+    SpreadsheetComponent,
+    ShippedComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     Ng2SearchPipeModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

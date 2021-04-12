@@ -6,6 +6,16 @@
 .nav-link {
     color: white;
 }
+.shipped {
+    color: white;
+    margin-left: 2%;
+    text-decoration: none;
+}
+.spreadsheet {
+    color: white;
+    margin-left: .5%;
+    text-decoration: none;
+}
 .navbar {
     background: #373740;
 }
