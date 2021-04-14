@@ -21,16 +21,8 @@ export class ShipmentsComponent implements OnInit {
   getLine = () => {
     this.service.getLine1().subscribe((response) => {
       this.lineX = response;
-      // this.lineX.splice(0, 1);
+      this.lineX.orders.sort((b, a) => ((a || {}).orderDate || '').localeCompare((b || {}).orderDate || ''));
       console.log(this.lineX);
-      // console.log(this.lineX);
-      // this.lineX.map((total) => {
-      //   // console.log(total);
-      //   this.grandTotalX = Number(total.totalprice.replace(/[^0-9.-]+/g, '') * Number(total.qtysold));
-      //   this.lineitemtotal += this.grandTotalX;
-      //   // this.masterTotal = this.shippingTotal + this.lineitemtotal;
-      //   return this.grandTotalX;
-      // });
     });
   }
 

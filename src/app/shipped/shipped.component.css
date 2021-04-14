@@ -1,0 +1,62 @@
+.main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: #33333D;  /* fallback for old browsers */
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    align-items: center;
+    margin: 0;
+}
+.datasort {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.ship-date {
+    margin-left: 10%;
+}
+.shopify-logo {
+    height: 20px;
+    width: 20px;
+}
+
+.headers {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.glass {
+    color: white;
+    min-height: 1vh;
+    width: 60%;
+    background: #373740;
+    border-radius: .8rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 15px;
+  }
+  .glassheader {
+    color: white;
+    min-height: 1vh;
+    width: 60%;
+    background: transparent;
+    border-radius: .8rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  .main-table {
+    max-height:60vh;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
