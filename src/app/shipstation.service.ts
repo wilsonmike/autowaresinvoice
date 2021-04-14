@@ -22,6 +22,13 @@ export class ShipstationService {
       },
     });
   }
+  getAnniversaryShipped = () => {
+    return this.http.get(`${this.shipstationBaseUrl}orderStatus=shipped&storeId=231686`, {
+      headers: {
+          Authorization: 'Basic ' + encoded,
+      },
+    });
+  }
   getShippedShopify = () => {
     return this.http.get(`${this.shipstationBaseUrl}orderStatus=shipped&storeId=246462`, {
       headers: {

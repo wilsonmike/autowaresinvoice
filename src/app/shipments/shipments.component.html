@@ -23,7 +23,7 @@
                 </div>
                 <div class="marginitems">
                     <span>{{ item.billTo.company }}</span>
-                    <span>{{ item.items[0].name }}</span>
+                    <span *ngFor="let subitem of item.items">{{ subitem.name }}</span>
                     <span>Order Date: {{ item.orderDate | date:'MM-dd-yy' }}</span>
                     <span>Order Status: {{ item.orderStatus }}</span>
                 </div>

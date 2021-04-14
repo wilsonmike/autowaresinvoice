@@ -9,6 +9,7 @@ import { ShipstationService } from '../shipstation.service';
 })
 export class ShippedComponent implements OnInit {
   orderShopify: any = [];
+  orderAnniversary: any = [];
   term = '';
   searchline = '';
 
@@ -17,6 +18,7 @@ export class ShippedComponent implements OnInit {
 
   ngOnInit(): void {
     this.getShopify();
+    this.getAnniversary();
   }
 
   getShopify = () => {
@@ -24,6 +26,14 @@ export class ShippedComponent implements OnInit {
       this.orderShopify = response;
       this.orderShopify.orders.sort((b, a) => ((a || {}).shipDate || '').localeCompare((b || {}).shipDate || ''));
       console.log(this.orderShopify.orders);
+    });
+  }
+
+  getAnniversary = () => {
+    this.service.getAnniversaryShipped().subscribe((response) => {
+      this.orderAnniversary = response;
+      this.orderAnniversary.orders.sort((b, a) => ((a || {}).shipDate || '').localeCompare((b || {}).shipDate || ''));
+      console.log(this.orderAnniversary);
     });
   }
 

@@ -56,7 +56,15 @@
   }
 
   .main-table {
-    max-height:60vh;
+    max-height:40vh;
     overflow-y:scroll;
     overflow-x:hidden;
+}
+.stores {
+    color: white;
+    margin: 2% auto;
+}
+.lin {
+    height: 1px;
+    background-color: white;
 }
