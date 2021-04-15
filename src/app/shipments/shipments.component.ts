@@ -9,6 +9,7 @@ import { ShipstationService } from '../shipstation.service';
 })
 export class ShipmentsComponent implements OnInit {
   lineX: any = [];
+  lineShop: any = [];
   term = '';
   searchline = '';
 
@@ -16,6 +17,7 @@ export class ShipmentsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getLine();
+    this.getLineShopify();
   }
 
   getLine = () => {
@@ -23,6 +25,13 @@ export class ShipmentsComponent implements OnInit {
       this.lineX = response;
       this.lineX.orders.sort((b, a) => ((a || {}).orderDate || '').localeCompare((b || {}).orderDate || ''));
       console.log(this.lineX);
+    });
+  }
+  getLineShopify = () => {
+    this.service.getLineShopify().subscribe((response) => {
+      this.lineShop = response;
+      this.lineShop.orders.sort((b, a) => ((a || {}).orderDate || '').localeCompare((b || {}).orderDate || ''));
+      // console.log(this.lineShop);
     });
   }
 

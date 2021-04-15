@@ -1,6 +1,6 @@
 .main {
     font-family: "Poppins", sans-serif;
-    min-height: 100vh;
+    min-height: 190vh;
     background: #33333D;  /* fallback for old browsers */
      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     align-items: center;
@@ -9,7 +9,7 @@
   .glass {
     color: white;
     min-height: 20vh;
-    width: 60%;
+    width: 100%;
     background: #373740;
     border-radius: 1rem;
     z-index: 2;
@@ -73,6 +73,7 @@
   .main-table {
     margin: 20px auto;
     max-height:60vh;
+    max-width:120vh;
     overflow-y:scroll;
     overflow-x:hidden;
 }
@@ -124,8 +125,8 @@ hr {
     flex-direction: column;
 }
 .greenbox {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 @media screen and (max-width: 690px) {
