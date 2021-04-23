@@ -25,7 +25,6 @@ export class ShippedComponent implements OnInit {
     this.service.getShippedShopify().subscribe((response) => {
       this.orderShopify = response;
       this.orderShopify.orders.sort((b, a) => ((a || {}).shipDate || '').localeCompare((b || {}).shipDate || ''));
-      console.log(this.orderShopify);
     });
   }
 
@@ -33,7 +32,6 @@ export class ShippedComponent implements OnInit {
     this.service.getAnniversaryShipped().subscribe((response) => {
       this.orderAnniversary = response;
       this.orderAnniversary.orders.sort((b, a) => ((a || {}).shipDate || '').localeCompare((b || {}).shipDate || ''));
-      console.log(this.orderAnniversary);
     });
   }
 
