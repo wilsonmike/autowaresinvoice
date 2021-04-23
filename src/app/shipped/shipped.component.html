@@ -13,6 +13,8 @@
         <div class="headers glassheader">
             <span>Order Number</span>
             <span>Ship Date</span>
+            <span>Employee</span>
+            <span>Location</span>
             <span>Source</span>
         </div>
         <div class="main-table">
@@ -20,6 +22,8 @@
                 <div class="data-sort glass">
                     <span>{{ item.orderNumber }}</span>
                     <span class="ship-date">{{ item.shipDate | date:'MM-dd-yy' }}</span>
+                    <span>{{ item.shipTo.name }}</span>
+                    <span>{{ item.shipTo.city }}</span>
                     <img class="shopify-logo" src="./assets/shopifylogo.png" alt="">
                 </div>
             </div>
@@ -38,6 +42,8 @@
         <div class="headers glassheader">
             <span>Order Number</span>
             <span>Ship Date</span>
+            <span>Employee</span>
+            <span>Store</span>
             <span>Source</span>
         </div>
         <div class="main-table bottom">
@@ -45,6 +51,8 @@
                 <div class="data-sort glass">
                     <span>{{ item.orderNumber }}</span>
                     <span class="ship-date">{{ item.shipDate | date:'MM-dd-yy' }}</span>
+                    <span>{{ item.billTo.name }}</span>
+                    <span>{{ item.billTo.company }}</span>
                     <img class="shopify-logo" src="./assets/woocommerce.svg" alt="">
                 </div>
             </div>

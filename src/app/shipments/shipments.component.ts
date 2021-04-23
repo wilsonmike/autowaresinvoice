@@ -24,15 +24,19 @@ export class ShipmentsComponent implements OnInit {
     this.service.getLine1().subscribe((response) => {
       this.lineX = response;
       this.lineX.orders.sort((b, a) => ((a || {}).orderDate || '').localeCompare((b || {}).orderDate || ''));
-      console.log(this.lineX);
     });
   }
   getLineShopify = () => {
     this.service.getLineShopify().subscribe((response) => {
       this.lineShop = response;
       this.lineShop.orders.sort((b, a) => ((a || {}).orderDate || '').localeCompare((b || {}).orderDate || ''));
-      // console.log(this.lineShop);
     });
   }
+  public removeSlashes(side: string): string {
+    if (side) {
+      side.replace(/\//g, '');
+      return side.replace('<br/>', '');
+    }
+}
 
 }

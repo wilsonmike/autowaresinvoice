@@ -53,7 +53,7 @@
                     <span class="order">Order Number: {{ item.orderNumber }}</span>
                 </div>
                 <div class="marginitems">
-                    <span>{{ item.billTo.company }}</span>
+                    <span>{{ removeSlashes(item.customerNotes) }}</span>
                     <span *ngFor="let subitem of item.items">{{ subitem.name }}</span>
                     <span>Order Date: {{ item.orderDate | date:'MM-dd-yy' }}</span>
                     <span>Order Status: {{ item.orderStatus }}</span>
