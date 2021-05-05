@@ -8,11 +8,26 @@ import { saveAs } from 'file-saver';
 })
 export class Invoice0408Component implements OnInit {
   test: any = [{
+    Id: 1,
     Order: '1050',
     Item: 'P&C Essential Fleece Pullover Hooded Sweatshirt - X-Large / Charcoal',
+    Employee: 'Chris Rohder',
     Location: 'East Lansing',
     ShipDate: '04-08-21',
-    Source: 'Auto-Wares Shopify'
+    Source: 'Auto-Wares Shopify',
+    Quantity: 1,
+    Price: 24.50,
+  }, {
+    Id: 2,
+    Order: '1204',
+    // tslint:disable-next-line:quotemark
+    Item: "Men's Cooling Performance T-Shirt",
+    Employee: 'Douglas Brown',
+    Location: 'Store Number 147',
+    ShipDate: '04-08-21',
+    Source: 'Auto-Wares Anniversary Store',
+    Quantity: 1,
+    Price: 9.50,
   }];
 
   constructor() { }
