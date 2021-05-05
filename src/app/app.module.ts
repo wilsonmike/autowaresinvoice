@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { InfoComponent } from './info/info.component';
 import { ShippedComponent } from './shipped/shipped.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Invoice0408Component } from './invoice0408/invoice0408.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MarchComponent,
     ShipmentsComponent,
     InfoComponent,
-    ShippedComponent
+    ShippedComponent,
+    Invoice0408Component
   ],
   imports: [
     BrowserModule,
