@@ -1,7 +1,15 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
     <a class="navbar-brand" routerLink="/home">IP | Auto-Wares Anniversary</a>
     <a class="shipped" routerLink="/shipped">Shipped</a>
-    <a class="nav-link" routerLink="/0408">Report : 04-08</a>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All Reports
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" routerLink="/0408">Report : 04-08</a>
+        <a class="dropdown-item" routerLink="/0409">Report : 04-09</a>
+      </div>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

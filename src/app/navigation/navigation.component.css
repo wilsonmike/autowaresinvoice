@@ -6,6 +6,13 @@
 .nav-link {
     color: white;
 }
+.nav-drop-item {
+    text-decoration: none;
+    color: black;
+}
+.dropdown {
+    margin-left: 20px;
+}
 .shipped {
     color: white;
     margin-left: 2%;
