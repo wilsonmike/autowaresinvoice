@@ -1,0 +1,43 @@
+<div class="master">
+    <app-navigation></app-navigation>
+    <div class="headers">
+        <h6 class="blueback">Shipment Data: 04-12-21</h6>
+        <h6 (click)="downloadFile(test)" class="redback"><img class="download" src="./assets/download.svg" alt="">Download CSV | Excel File</h6>
+    </div>
+<div class="container">
+    <div>
+        <div class="table-responsive">
+            <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Total Orders</th>
+                    <th scope="col">Order Number</th>
+                    <th scope="col">Item(s) Description</th>
+                    <th scope="col">Employee</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Ship Date</th>
+                    <th scope="col">Source</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let items of test">
+                    <td class="id-table">{{items.Id}}</td>
+                    <td>{{items.Order}}</td>
+                    <td>{{items.Item}}</td>
+                    <td>{{items.Employee}}</td>
+                    <td>{{items.Location}}</td>
+                    <td>{{items.ShipDate}}</td>
+                    <td>{{items.Source}}</td>
+                    <td>{{items.Quantity}}</td>
+                    <td>{{items.Price}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+</div>
+
+

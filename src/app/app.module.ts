@@ -16,6 +16,7 @@ import { ShippedComponent } from './shipped/shipped.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Invoice0408Component } from './invoice0408/invoice0408.component';
 import { Invoice0409Component } from './invoice0409/invoice0409.component';
+import { Invoice0412Component } from './invoice0412/invoice0412.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { Invoice0409Component } from './invoice0409/invoice0409.component';
     InfoComponent,
     ShippedComponent,
     Invoice0408Component,
-    Invoice0409Component
+    Invoice0409Component,
+    Invoice0412Component
   ],
   imports: [
     BrowserModule,
