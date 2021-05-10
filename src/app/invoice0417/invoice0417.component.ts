@@ -128,6 +128,69 @@ export class Invoice0417Component implements OnInit {
     Source: 'Auto-Wares Shopify',
     Quantity1: 1,
     Price1: 52.75,
+  },
+  {
+    Id: 10,
+    Order: '1045',
+    // tslint:disable-next-line:quotemark
+    Item1: "Devon & Jones CrownLux Performance™ Men's Clubhouse Micro-Stripe Quarter-Zip - Medium / Black",
+    // tslint:disable-next-line:quotemark
+    Item2: "Devon & Jones CrownLux Performance™ Men's Tonal Mini Check Shirt - Medium / Navy",
+    Employee: 'Bruce Gumenick',
+    Location: 'Lake Front',
+    ShipDate: '04-17-21',
+    Source: 'Auto-Wares Shopify',
+    Quantity1: 1,
+    Quantity2: 1,
+    Price1: 47.50,
+    Price2: 42.50,
+  },
+  {
+    Id: 11,
+    Order: '1037',
+    // tslint:disable-next-line:quotemark
+    Item1: "P&C Long Sleeve Core Blend T-Shirt - Medium / Charcoal",
+    // tslint:disable-next-line:quotemark
+    Item2: "P&C Long Sleeve Core Blend T-Shirt - Large / Charcoal",
+    Item3: 'P&C Long Sleeve Core Blend T-Shirt - X-Large / Charcoal',
+    Employee: 'RON SHEFFIELD',
+    Location: 'Saint Helen',
+    ShipDate: '04-17-21',
+    Source: 'Auto-Wares Shopify',
+    Quantity1: 3,
+    Quantity2: 3,
+    Quantity3: 6,
+    Price1: 9.35,
+    Price2: 9.35,
+    Price3: 9.35,
+  },
+  {
+    Id: 12,
+    Order: '1035',
+    // tslint:disable-next-line:quotemark
+    Item1: "P&C Long Sleeve Core Blend T-Shirt - X-Large / Charcoal",
+    // tslint:disable-next-line:quotemark
+    Item2: "P&C Long Sleeve Core Blend T-Shirt - X-Large / Charcoal",
+    Employee: 'John Oates',
+    Location: 'Pontiac Trail',
+    ShipDate: '04-17-21',
+    Source: 'Auto-Wares Shopify',
+    Quantity1: 1,
+    Quantity2: 1,
+    Price1: 9.35,
+    Price2: 43.50,
+  },
+  {
+    Id: 13,
+    Order: '1047',
+    // tslint:disable-next-line:quotemark
+    Item1: "P&C Core Blend T-Shirt - Small / Charcoal",
+    Employee: 'Leigha Pfeiffer',
+    Location: 'W Prospect St',
+    ShipDate: '04-17-21',
+    Source: 'Auto-Wares Shopify',
+    Quantity1: 1,
+    Price1: 7.00,
   }];
 
   constructor() { }
