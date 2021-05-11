@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ShipstationService } from '../shipstation.service';
 
 @Component({
   selector: 'app-invoice0417',
@@ -6,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./invoice0417.component.css']
 })
 export class Invoice0417Component implements OnInit {
+  /* table reference */
+  @ViewChild('userTable') userTable: ElementRef;
+
+  /* end table ref */
+  orderAnniversary: any = [];
   test: any = [{
     Id: 1,
     Order: '1044',
@@ -193,9 +200,14 @@ export class Invoice0417Component implements OnInit {
     Price1: 7.00,
   }];
 
-  constructor() { }
+  constructor(private service: ShipstationService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.service.getAnniversaryShipped().subscribe((response) => {
+      this.orderAnniversary = response;
+      this.orderAnniversary.orders.sort((b, a) => ((a || {}).shipDate || '').localeCompare((b || {}).shipDate || ''));
+      console.log(this.orderAnniversary.orders);
+    });
   }
 
    // tslint:disable-next-line:typedef
@@ -217,6 +229,11 @@ export class Invoice0417Component implements OnInit {
     a.click();
     window.URL.revokeObjectURL(url);
     a.remove();
+  }
+
+  // test
+  exportElmToExcel(): void {
+    this.service.exportTableElmToExcel(this.userTable, 'user_data');
   }
 
 }

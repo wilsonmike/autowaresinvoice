@@ -36,6 +36,33 @@
                 </tbody>
               </table>
         </div>
+        <!-- test table -->
+        <div class="table-responsive">
+          <table class="table table-dark" #userTable>
+              <thead>
+                <tr>
+                  <th scope="col">Total Orders</th>
+                  <th scope="col">Order Number</th>
+                  <th scope="col">Item(s) Description</th>
+                  <th scope="col">Employee</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Ship Date</th>
+                  <th scope="col">Source</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let items of orderAnniversary.orders">
+                <tr *ngIf="items.orderNumber == 1228">
+                    <td class="id-table">1 ANV</td>
+                    <td>{{items.orderNumber}}</td>
+                    <td *ngFor="let garment of items.items">{{garment.name}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <button (click)="exportElmToExcel()">Export</button>
+      </div>
+        <!-- end test table -->
     </div>
 </div>
 </div>
