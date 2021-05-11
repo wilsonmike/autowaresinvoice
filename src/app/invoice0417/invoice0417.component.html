@@ -57,7 +57,35 @@
                     <td class="id-table">1 ANV</td>
                     <td>{{items.orderNumber}}</td>
                     <td *ngFor="let garment of items.items">{{garment.name}}</td>
+                    <td>{{ items.billTo.name }}</td>
+                    <td>{{ items.billTo.company }}</td>
+                    <td>{{ items.shipDate }}</td>
+                    <td>{{ items.advancedOptions.storeId }}</td>
+                    <td *ngFor="let garment of items.items">{{ garment.quantity }}</td>
+                    <td *ngFor="let garment of items.items">{{garment.unitPrice}}</td>
                 </tr>
+                <tr *ngIf="items.orderNumber == 1227">
+                  <td class="id-table">1 ANV</td>
+                  <td>{{items.orderNumber}}</td>
+                  <td *ngFor="let garment of items.items">{{garment.name}}</td>
+                  <td>{{ items.billTo.name }}</td>
+                  <td>{{ items.billTo.company }}</td>
+                  <td>{{ items.shipDate }}</td>
+                  <td>{{ items.advancedOptions.storeId }}</td>
+                  <td *ngFor="let garment of items.items">{{ garment.quantity }}</td>
+                  <td *ngFor="let garment of items.items">{{garment.unitPrice}}</td>
+              </tr>
+              <tr *ngIf="items.orderNumber == 1223">
+                <td class="id-table">1 ANV</td>
+                <td>{{items.orderNumber}}</td>
+                <td *ngFor="let garment of items.items">{{garment.name}}</td>
+                <td>{{ items.billTo.name }}</td>
+                <td>{{ items.billTo.company }}</td>
+                <td>{{ items.shipDate }}</td>
+                <td>{{ items.advancedOptions.storeId }}</td>
+                <td *ngFor="let garment of items.items">{{ garment.quantity }}</td>
+                <td *ngFor="let garment of items.items">{{garment.unitPrice}}</td>
+            </tr>
               </tbody>
             </table>
             <button (click)="exportElmToExcel()">Export</button>
