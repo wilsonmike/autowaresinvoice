@@ -1,0 +1,48 @@
+<div class="master">
+    <app-navigation></app-navigation>
+    <div class="headers">
+        <h6 class="blueback">Shipment Data: 04-17-21</h6>
+        <h6 (click)="downloadFile(zeroFour)" class="redback"><img class="download" src="./assets/download.svg" alt="">Download CSV | Excel File</h6>
+    </div>
+<div class="container">
+    <div>
+        <div class="table-responsive">
+            <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Total Orders</th>
+                    <th scope="col">Order Number</th>
+                    <th scope="col">Item(s) Description</th>
+                    <th scope="col">Employee</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Ship Date</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let items of zeroFour; let i = index">
+                    <td>{{i + 1}}</td>
+                    <td>{{items['Order - Number']}}</td>
+                    <td>{{items['Item - Name']}}</td>
+                    <td>{{items['Ship To - Name']}}</td>
+                    <div *ngIf="items['Notes - From Buyer']">
+                        <td>{{removeSlashes(items['Notes - From Buyer'])}}</td>
+                    </div>
+                    <div *ngIf="!items['Notes - From Buyer']">
+                        <td>{{removeSlashes(items['Ship To - Address 1'])}}</td>
+                    </div>
+                    <td>{{items['Date - Shipped Date']}}</td>
+                    <td>{{items['Item - Qty']}}</td>
+                    <td>{{items['Amount - Order Total']}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
