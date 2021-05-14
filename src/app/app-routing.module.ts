@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { InfoComponent } from './info/info.component';
+import { Invoice0Component } from './invoice0/invoice0.component';
 import { Invoice0402Component } from './invoice0402/invoice0402.component';
 import { Invoice0408Component } from './invoice0408/invoice0408.component';
 import { Invoice0409Component } from './invoice0409/invoice0409.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: '0427', component: Invoice0427Component },
   { path: '0505', component: Invoice0505Component },
   { path: '0506', component: Invoice0506Component },
+  { path: '0326', component: Invoice0Component },
 
   { path: '**', component: ShipmentsComponent },  // Wildcard route for a 404 page
 ];
