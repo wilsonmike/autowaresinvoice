@@ -37,6 +37,6 @@ export class ShipmentsComponent implements OnInit {
       side.replace(/\//g, '');
       return side.replace('<br/>', '');
     }
-}
+  }
 
 }
