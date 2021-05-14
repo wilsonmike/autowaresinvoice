@@ -2043,10 +2043,17 @@ export class Invoice0417FilesComponent implements OnInit {
     const blob = new Blob([csvArray], { type: 'text/csv' });
     const url = window.URL.createObjectURL(blob);
     a.href = url;
-    a.download = 'Shipments-04-12.csv';
+    a.download = 'Shipments-04-17.csv';
     a.click();
     window.URL.revokeObjectURL(url);
     a.remove();
+  }
+
+  public removeSlashes(side: string): string {
+    if (side) {
+      side.replace(/\//g, '');
+      return side.replace('<br/>', '');
+    }
   }
 
 }

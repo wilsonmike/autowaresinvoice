@@ -16,22 +16,25 @@
                     <th scope="col">Employee</th>
                     <th scope="col">Location</th>
                     <th scope="col">Ship Date</th>
-                    <th scope="col">Source</th>
                     <th scope="col">Qty</th>
                     <th scope="col">Price</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let items of seventeenData">
-                    <td class="id-table">{{items.Id}}</td>
+                  <tr *ngFor="let items of seventeenData; let i = index">
+                    <td>{{i + 1}}</td>
                     <td>{{items['Order - Number']}}</td>
                     <td>{{items['Item - Name']}}</td>
-                    <td>{{items.Employee}}</td>
-                    <td>{{items.Location}}</td>
-                    <td>{{items.ShipDate}}</td>
-                    <td>{{items.Source}}</td>
-                    <td>{{items.Quantity}}</td>
-                    <td>{{items.Price}}</td>
+                    <td>{{items['Ship To - Name']}}</td>
+                    <div *ngIf="items['Notes - From Buyer']">
+                        <td>{{removeSlashes(items['Notes - From Buyer'])}}</td>
+                    </div>
+                    <div *ngIf="!items['Notes - From Buyer']">
+                        <td>{{removeSlashes(items['Ship To - Address 1'])}}</td>
+                    </div>
+                    <td>{{items['Date - Shipped Date']}}</td>
+                    <td>{{items['Item - Qty']}}</td>
+                    <td>{{items['Amount - Order Total']}}</td>
                   </tr>
                 </tbody>
               </table>
