@@ -13,6 +13,7 @@ import { Invoice0417Component } from './invoice0417/invoice0417.component';
 import { Invoice0427Component } from './invoice0427/invoice0427.component';
 import { Invoice0505Component } from './invoice0505/invoice0505.component';
 import { Invoice0506Component } from './invoice0506/invoice0506.component';
+import { Invoice0513Component } from './invoice0513/invoice0513.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ShipmentsComponent } from './shipments/shipments.component';
 import { ShippedComponent } from './shipped/shipped.component';
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: '0505', component: Invoice0505Component },
   { path: '0506', component: Invoice0506Component },
   { path: '0326', component: Invoice0Component },
+  { path: '0513', component: Invoice0513Component },
 
   { path: '**', component: ShipmentsComponent },  // Wildcard route for a 404 page
 ];
