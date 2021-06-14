@@ -16,7 +16,8 @@ import { Invoice0506Component } from './invoice0506/invoice0506.component';
 import { Invoice0513Component } from './invoice0513/invoice0513.component';
 import { Invoice0520Component } from './invoice0520/invoice0520.component';
 import { Invoice0525Component } from './invoice0525/invoice0525.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { Invoice0605Component } from './invoice0605/invoice0605.component';
+import { Invoice0610Component } from './invoice0610/invoice0610.component';
 import { ShipmentsComponent } from './shipments/shipments.component';
 import { ShippedComponent } from './shipped/shipped.component';
 
@@ -38,12 +39,14 @@ const routes: Routes = [
   { path: '0513', component: Invoice0513Component },
   { path: '0520', component: Invoice0520Component },
   { path: '0525', component: Invoice0525Component },
+  { path: '0605', component: Invoice0605Component },
+  { path: '0610', component: Invoice0610Component },
 
-  { path: '**', component: ShipmentsComponent },  // Wildcard route for a 404 page
+  { path: '**', component: ShipmentsComponent }, // Wildcard route for a 404 page
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

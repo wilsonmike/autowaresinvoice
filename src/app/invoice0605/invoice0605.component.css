@@ -1,0 +1,58 @@
+.master {
+  font-family: "Poppins", sans-serif;
+  min-height: 190vh;
+  background: #33333d; /* fallback for old browsers */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  align-items: center;
+  margin: 0;
+}
+.table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 5px;
+  width: 100vw;
+  max-width: 80vw;
+}
+.blueback {
+  color: white;
+  min-height: 5vh;
+  width: 20%;
+  background: #4285f4;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+}
+.redback {
+  background: #ea4335;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  min-height: 5vh;
+  width: 20%;
+  cursor: pointer;
+}
+.headers {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.download {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.id-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
