@@ -19,6 +19,7 @@ import { Invoice0525Component } from './invoice0525/invoice0525.component';
 import { Invoice0605Component } from './invoice0605/invoice0605.component';
 import { Invoice0610Component } from './invoice0610/invoice0610.component';
 import { Invoice0622Component } from './invoice0622/invoice0622.component';
+import { Invoice0630Component } from './invoice0630/invoice0630.component';
 import { ShipmentsComponent } from './shipments/shipments.component';
 import { ShippedComponent } from './shipped/shipped.component';
 
@@ -44,6 +45,7 @@ const routes: Routes = [
   { path: '0610', component: Invoice0610Component },
   { path: '0622', component: Invoice0622Component },
 
+  { path: '0630', component: Invoice0630Component },
   { path: '**', component: ShipmentsComponent }, // Wildcard route for a 404 page
 ];
 
