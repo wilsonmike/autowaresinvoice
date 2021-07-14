@@ -30,6 +30,7 @@ import { Invoice0520Component } from './invoice0520/invoice0520.component';
 import { Invoice0525Component } from './invoice0525/invoice0525.component';
 import { Invoice0605Component } from './invoice0605/invoice0605.component';
 import { Invoice0610Component } from './invoice0610/invoice0610.component';
+import { Invoice0622Component } from './invoice0622/invoice0622.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { Invoice0610Component } from './invoice0610/invoice0610.component';
     Invoice0520Component,
     Invoice0525Component,
     Invoice0605Component,
-    Invoice0610Component
+    Invoice0610Component,
+    Invoice0622Component
   ],
   imports: [
     BrowserModule,
