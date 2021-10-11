@@ -35,6 +35,7 @@ import { Invoice0630Component } from './invoice0630/invoice0630.component';
 import { Invoice0701Component } from './invoice0701/invoice0701.component';
 import { Invoice0709Component } from './invoice0709/invoice0709.component';
 import { InvoicetocurrentComponent } from './invoicetocurrent/invoicetocurrent.component';
+import { SepdataComponent } from './sepdata/sepdata.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { InvoicetocurrentComponent } from './invoicetocurrent/invoicetocurrent.c
     Invoice0630Component,
     Invoice0701Component,
     Invoice0709Component,
-    InvoicetocurrentComponent
+    InvoicetocurrentComponent,
+    SepdataComponent
   ],
   imports: [
     BrowserModule,
